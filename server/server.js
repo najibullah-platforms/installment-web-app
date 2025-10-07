@@ -3,6 +3,9 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
 import authRoutes from "./routes/authRoutes.js"; // 👈 important
+import installmentRoutes from "./routes/installmentRoutes.js";
+
+
 
 dotenv.config();
 const app = express();
@@ -14,6 +17,8 @@ app.use(express.json());
 
 // test route
 app.get("/", (req, res) => res.send("Server running..."));
+
+app.use("/api/installments", installmentRoutes);
 
 // 👇 Mount routes
 app.use("/api/auth", authRoutes);
