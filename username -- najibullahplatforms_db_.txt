@@ -1,0 +1,5 @@
+username --> najibullahplatforms_db_user
+password -- > zG69CVpI3xqj5Ttn
+
+
+mongodb for instlallemnt database project 
